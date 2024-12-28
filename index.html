@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Carros</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/undraw_vintage_414k.svg" alt="logo icon of a car">
+      <ul>
+        <li><a href="#">Carros</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Vendas</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="car-section">
+        <h2>Bem vindos a nosso sistema de gerenciamento de carros</h2>
+
+        <div class="car-form-section">
+          <h3>Adicionar Novo Carro</h3>
+          <form id="car-form">
+            <input type="text" id="modelo" placeholder="Modelo" required>
+            <input type="text" id="cliente" placeholder="Cliente" required>
+            <input type="date" id="data-de-aderencia" required>
+            <input type="date" id="data-de-fabricacao" required>
+            <button type="submit">Adicionar Carro</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="car-table-section">
+        <h3>Carros Comprados</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Cliente</th>
+              <th>Data de compra</th>
+              <th>Ano de Fabricação</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody class="corpo-tabela">
+            <tr class="linha-tabela">
+              <td class="modelo">Car 1</td>
+              <td class="cliente">Client 1</td>
+              <td class="data-de-aderencia">01/01/2021</td>
+              <td class="data-de-fabricacao">10/01/2021</td>
+              <td class="buttons">
+                <button class="botao-editar">Edit</button>
+                <button class="botao-remover">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+
+</html>

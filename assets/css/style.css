@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 20%;
+}
+
+header ul a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #f4f4f4;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-image: url('https://sb.kaleidousercontent.com/67418/1920x1100/2ed9107761/bg.png');
+}
+
+.car-section {
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.car-form-section {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
+}
+  
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.car-table-section {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+  tr:hover {
+    background-color: #f4f4f4;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.botao-editar {
+  background-color: green;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0a0;
+  }
+}
+
+.botao-remover {
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a00;
+  }
+}
